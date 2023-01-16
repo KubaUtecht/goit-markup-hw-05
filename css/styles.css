@@ -2,7 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
   margin: 0 auto;
-  max-width: 1600px;
+  width: 1600px;
+  position: relative;
 }
 
 :root {
@@ -33,6 +34,8 @@ body {
 .logo:focus {
   color: #2196f3;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .web-logo {
@@ -60,6 +63,8 @@ body {
 .link:focus {
   color: #2196f3;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-container {
@@ -67,6 +72,27 @@ body {
   width: 254px;
   display: flex;
   justify-content: space-between;
+}
+
+.nav-menu-link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-menu-link--active {
+  color: #2196f3;
+}
+
+.nav-menu-link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2196f3;
+  height: 5px;
+  border-radius: 3px;
+  bottom: 0;
 }
 
 .contact {
@@ -80,6 +106,8 @@ body {
 .contact:focus {
   color: #2196f3;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail {
@@ -95,6 +123,8 @@ body {
 .mail:focus {
   stroke: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone {
@@ -111,6 +141,8 @@ body {
 .phone:focus {
   stroke: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-contact {
@@ -163,22 +195,8 @@ body {
 .text-button:hover {
   background-color: #2196f3;
   color: #ffffff;
-}
-
-.button-portfolio {
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  background-color: #f5f4fa;
-  cursor: pointer;
-  width: 93px;
-  height: 38px;
-}
-
-.button-portfolio:focus,
-.button-portfolio:hover {
-  background-color: #2196f3;
-  color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* first section */
@@ -372,12 +390,16 @@ body {
 .icons-style:focus {
   background-color: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-style:hover > svg,
 .icons-style:focus > svg {
   fill: white;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-item {
@@ -423,12 +445,16 @@ body {
   border: 1px solid #2196f3;
   cursor: pointer;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners:hover > svg,
 .partners:focus > svg {
   fill: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-position1 {
@@ -463,6 +489,8 @@ body {
 .logo-footer:hover,
 .logo-footer:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .place {
@@ -482,6 +510,8 @@ body {
 .link-footer:hover,
 .link-footer:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .object-position {
@@ -526,14 +556,18 @@ body {
 .background-size:focus {
   background-color: #2196f3;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .background-size:hover > svg,
 .background-size:hover > svg {
   fill: white;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* portfolio page */
+/* ==========portfolio page============ */
 
 .filter-button {
   list-style: none;
@@ -546,6 +580,24 @@ body {
 
 .filter-button > li {
   padding-right: 8px;
+}
+
+.button-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: #f5f4fa;
+  cursor: pointer;
+  width: 93px;
+  height: 38px;
+}
+
+.button-portfolio:focus,
+.button-portfolio:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-name {
@@ -600,6 +652,8 @@ body {
 .item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-hidden {
@@ -611,7 +665,7 @@ body {
 
 .hidden {
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(101%);
   width: auto;
   height: auto;
   background-color: rgba(33, 150, 243, 0.9);
@@ -638,4 +692,60 @@ body {
 .link-figure {
   text-decoration: none;
   color: #212121;
+}
+
+/* BACKDROP */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: #00000033;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 221px;
+  left: 536px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.close-bth {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-close {
+  fill: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  padding-right: 2px;
 }
